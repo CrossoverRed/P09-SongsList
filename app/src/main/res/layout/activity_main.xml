@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgrounds"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/FullTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Songs"
+                android:textColor="#460D50"
+                android:textColorHighlight="#53125E"
+                android:textColorHint="#7E2D8C"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/songTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Song Title"
+                android:textColor="#460D50"
+                android:textColorHighlight="#53125E"
+                android:textColorHint="#7E2D8C"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/SongEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter song title here"
+                android:inputType="text"
+                android:textColor="#460D50"
+                android:textColorHighlight="#53125E"
+                android:textColorHint="#7E2D8C" />
+
+            <TextView
+                android:id="@+id/SingerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Singers"
+                android:textColor="#460D50"
+                android:textColorHighlight="#53125E"
+                android:textColorHint="#7E2D8C"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/SingerEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter singer(s) here"
+                android:inputType="text"
+                android:textColor="#460D50"
+                android:textColorHighlight="#53125E"
+                android:textColorHint="#7E2D8C" />
+
+            <TextView
+                android:id="@+id/YearTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Year"
+                android:textColor="#460D50"
+                android:textColorHighlight="#53125E"
+                android:textColorHint="#7E2D8C"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/YearEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter year of release here"
+                android:inputType="text"
+                android:textColor="#460D50"
+                android:textColorHighlight="#53125E"
+                android:textColorHint="#7E2D8C" />
+
+            <TextView
+                android:id="@+id/StarsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stars"
+                android:textColor="#460D50"
+                android:textColorHighlight="#53125E"
+                android:textColorHint="#7E2D8C"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/RadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rBtn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="#460D50"
+                        android:textColorHighlight="#53125E"
+                        android:textColorHint="#7E2D8C"
+                        android:textSize="25dp" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textColor="#460D50"
+                        android:textColorHighlight="#53125E"
+                        android:textColorHint="#7E2D8C"
+                        android:textSize="25dp" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="#460D50"
+                        android:textColorHighlight="#53125E"
+                        android:textColorHint="#7E2D8C"
+                        android:textSize="25dp" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="#460D50"
+                        android:textColorHighlight="#53125E"
+                        android:textColorHint="#7E2D8C"
+                        android:textSize="25dp" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#460D50"
+                        android:textColorHighlight="#53125E"
+                        android:textColorHint="#7E2D8C"
+                        android:textSize="25dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Insertbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Insert"
+                    android:textColor="#53125E"
+                    android:textColorHighlight="#53125E"
+                    android:textColorHint="#53125E"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/ShowListbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Show List"
+                    android:textColor="#53125E"
+                    android:textColorHighlight="#53125E"
+                    android:textColorHint="#53125E"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
